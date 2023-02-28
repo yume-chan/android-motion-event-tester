@@ -58,7 +58,6 @@ namespace AndroidApp1
                 $"    ActionIndex: {motionEvent.ActionIndex}\n" +
                 $"    ActionMasked: {motionEvent.ActionMasked}\n" +
                 $"    YPrecision: {motionEvent.YPrecision}\n" +
-                $"    Classification: {motionEvent.Classification}\n" +
                 $"    DeviceId: {motionEvent.DeviceId}\n" +
                 $"    DownTime: {motionEvent.DownTime}\n" +
                 $"    ToolType: {motionEvent.GetToolType(0)}\n" +

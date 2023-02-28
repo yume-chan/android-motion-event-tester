@@ -8,5 +8,19 @@
     <ApplicationId>com.companyname.AndroidApp1</ApplicationId>
     <ApplicationVersion>1</ApplicationVersion>
     <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    <AndroidSigningKeyStore>debug.keystore</AndroidSigningKeyStore>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AndroidPackageFormat>apk</AndroidPackageFormat>
+    <AndroidKeyStore>True</AndroidKeyStore>
+    <AndroidSigningStorePass>EventTester</AndroidSigningStorePass>
+    <AndroidSigningKeyAlias>debug</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>EventTester</AndroidSigningKeyPass>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AndroidKeyStore>True</AndroidKeyStore>
+    <AndroidSigningStorePass>EventTester</AndroidSigningStorePass>
+    <AndroidSigningKeyAlias>debug</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>EventTester</AndroidSigningKeyPass>
   </PropertyGroup>
 </Project>
